@@ -3,11 +3,13 @@ Used to enable WiFi access to pico W projects without the need to hardcode crede
 
 ### Installing
 
+#### mip
+```python
+mip.install("github:PedroAraoz/WifiManager/wifimanager.py")
+```
+
 #### Manually
 Download the `wifimanager.py` file and upload it to your pico with [Thonny](https://thonny.org) or [MicroPico](https://github.com/paulober/MicroPico)
-
-#### mip
-TODO: coming soon
 
 ### How it works
 Tries to load credentials from the `credentials` file. If they are not present or if they are incorrect, it will create an access point in which you can connect and through a webpage, load the credentials to be saved in plaintext.
